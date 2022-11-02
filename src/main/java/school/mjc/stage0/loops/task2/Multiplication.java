@@ -7,7 +7,7 @@ public class Multiplication {
         int numberOne=0;
         int numberTwo=multiplyByAndToInclusive;
 
-        while (numberOne<=multiplyByAndToInclusive){
+        while (numberOne<=multiplyByAndToInclusive&&numberTwo>=0){
             System.out.println(numberOne*numberTwo);
             numberOne++;
             numberTwo--;
