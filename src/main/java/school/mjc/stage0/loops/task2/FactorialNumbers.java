@@ -6,9 +6,16 @@ public class FactorialNumbers {
         int factorial = 1;
 
         while (number <= printToInclusive) {
-            factorial *= ++number;
-            number++;
-            System.out.println(factorial);
+            if (number==0){
+                factorial=1;
+                System.out.println(factorial);
+                number++;
+            }else {
+                factorial *= number;
+                number++;
+                System.out.println(factorial);
+            }
+
         }
 
 
