@@ -2,10 +2,15 @@ package school.mjc.stage0.loops.task2;
 
 public class PowerOfTwo {
     public void printPower(int power) {
-        if (power<0){
+        int count = 0;
+        if (power < 0) {
             System.out.println("too much power");
-        }else {
-            System.out.println(Math.pow(2,power));
+        } else {
+            while (count <= power) {
+                System.out.println((int) Math.pow(2, count));
+                count++;
+            }
+
         }
     }
 }
