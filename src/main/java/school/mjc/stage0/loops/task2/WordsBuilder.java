@@ -1,16 +1,20 @@
 package school.mjc.stage0.loops.task2;
 
-import java.util.Arrays;
+
+
+
 
 public class WordsBuilder {
-    public void buildPhrase(char... chars){
-        String word="";
+    public void buildPhrase(char... chars) {
+//        System.out.print("loops are cool");
 
-        word=word+ Arrays.toString(chars);
-        while (word.length()>3){
-            System.out.println(word);
+
+                StringBuilder str= new StringBuilder();
+                for (char char1:chars){
+                    str.append(char1);
+                }
+                System.out.print(str);
+
         }
 
-
-    }
 }
